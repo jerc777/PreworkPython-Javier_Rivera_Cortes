@@ -1,4 +1,4 @@
-# 1. Crea una función para verificar si un número es par o impar y devuelva “El número es par” o “El número es impar” según corresponda.
+'''# 1. Crea una función para verificar si un número es par o impar y devuelva “El número es par” o “El número es impar” según corresponda.
 # ya Realizado
 
 # 2. Crea una función a la que pases un número como argumento, calcule el factorial de ese número y haga print del resultado.
@@ -21,11 +21,25 @@ def busca_mayor(list):
             cont = num
     print('El numero mayor es el: ', cont)
 
-
 Lista = [2, 5, 6, 7, 8, 5, 4, 9, 5, 6, 2, 1, 3, 54, 4, 4, 2, 5, 6]
 busca_mayor(Lista)
-
+'''
 # 5. Crea una función que, dado un número, sume los dígitos de ese número y devuelva el resultado.
+
+num1 = int(input('Ingrese un numero para que sus digitos sean sumados: '))
+
+def sumar_digitos(numero): 
+  suma = 0
+  while numero > 0: 
+    suma += numero % 10 numero //= 1
+  return suma
+
+num = int(input("Ingresa un número: ")) 
+print("La suma de los dígitos es:", sumar_digitos(num))
+
+
+
+
 
 # 6. Dados dos números, crea una función para encontrar el mínimo común múltiplo (MCM) de los dos números, que se les pasarán como argumento a la función, y devuelva el MCM.
 
