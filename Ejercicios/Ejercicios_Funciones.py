@@ -1,3 +1,4 @@
+'''
 # 1. Ejercicio: Define una función que tome dos números y retorne su suma.
 def sumar_AB(a, b):
     return (print('La suma es:', (a+b)))
@@ -57,32 +58,31 @@ def suma_list(lista):
 
 lista = [40, 25, 15, 10, 6, 2, 2]
 suma_list(lista)
-
 '''
+
 # .........Variacion del ejercicio.....(arreglar)........
 # si es que la lista se pasa numero a numero por pantalla
 
-while True:
-    lista_de_numeros = input('Ingrese los numeros de la lista que quiere sumar, y escriba "fin" para finlaizar: ')
-    if num == 'fin':
+def suma_lista(lista):
+            sum = 0
+            cont = 0
+            for cont in lista_num:
+                sum = sum + cont
+            print('La suma de los numeros introducidos es: ', sum)
+
+
 lista_num = []
 while True:
-    num = input(
-        'Ingrese los numeros de la lista que quiere sumar, y escriba "fin" para finlaizar: ')
+    num = input( 'Ingrese los numeros de la lista que quiere sumar, y escriba "fin" para finlaizar: ')
     if num == 'fin':
-        sum = 0
-        cont = 0
-        print(num)
-        for cont in lista_num:
-            sum = sum + cont
-        print(f'La suma de los numeros introducidos es: ', sum)
-    else:
-        lista_num.append(num)
+        break
+    lista_num.append(num)
 
-print(lista_num)
+suma_lista(lista_num)
+
+
+
 '''
-
-
 # 5. Ejercicio: Define una función que reciba una cadena de texto y retorne lacadena en reversa.
 
 cadena = input('Escriba aqui para obtener lo escrito de manera invertida: ')
@@ -99,3 +99,4 @@ while cont1 <= len(cadena):
 
 print('Lo escrito anteriormente de manera invertida se queda como: ')
 print(cadena_invertida)
+'''

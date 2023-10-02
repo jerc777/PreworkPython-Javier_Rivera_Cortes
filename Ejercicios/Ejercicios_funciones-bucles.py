@@ -4,7 +4,6 @@
 # 2. Crea una función a la que pases un número como argumento, calcule el factorial de ese número y haga print del resultado.
 # Ya realizado
 
-
 # 3. Crea una función a la que se le pase un número como argumento, calcule la cantidad de dígitos y haga print de “La cantidad de dígitos es:” y el resultado total de dígitos.
 # PISTA: Para convertir un número a string usa el método str(). Te recordamos que para saber la longitud de una cadena utilizamos len()
 
@@ -27,18 +26,6 @@ busca_mayor(Lista)
 # 5. Crea una función que, dado un número, sume los dígitos de ese número y devuelva el resultado.
 
 num1 = int(input('Ingrese un numero para que sus digitos sean sumados: '))
-
-def sumar_digitos(numero): 
-  suma = 0
-  while numero > 0: 
-    suma += numero % 10 numero //= 1
-  return suma
-
-num = int(input("Ingresa un número: ")) 
-print("La suma de los dígitos es:", sumar_digitos(num))
-
-
-
 
 
 # 6. Dados dos números, crea una función para encontrar el mínimo común múltiplo (MCM) de los dos números, que se les pasarán como argumento a la función, y devuelva el MCM.
