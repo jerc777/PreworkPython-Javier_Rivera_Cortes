@@ -63,23 +63,24 @@ suma_list(lista)
 # .........Variacion del ejercicio.....(arreglar)........
 # si es que la lista se pasa numero a numero por pantalla
 
+
 def suma_lista(lista):
-            sum = 0
-            cont = 0
-            for cont in lista_num:
-                sum = sum + cont
-            print('La suma de los numeros introducidos es: ', sum)
+    sum = 0
+    for cont in lista:
+        # print(cont)
+        sum = sum + int(cont)
+    print('La suma de los numeros introducidos es: ', sum)
 
 
 lista_num = []
 while True:
-    num = input( 'Ingrese los numeros de la lista que quiere sumar, y escriba "fin" para finlaizar: ')
+    num = input(
+        'Ingrese los numeros de la lista que quiere sumar, y escriba "fin" para finlaizar: ')
     if num == 'fin':
         break
     lista_num.append(num)
 
 suma_lista(lista_num)
-
 
 
 '''
