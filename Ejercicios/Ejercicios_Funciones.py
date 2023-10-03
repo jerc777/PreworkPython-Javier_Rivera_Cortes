@@ -1,4 +1,3 @@
-'''
 # 1. Ejercicio: Define una función que tome dos números y retorne su suma.
 def sumar_AB(a, b):
     return (print('La suma es:', (a+b)))
@@ -9,7 +8,6 @@ b = int(input('ingrese el segundo número a sumar:'))
 sumar_AB(a, b)
 
 # 2. Ejercicio: Define una función que tome un número y retorne su factorial.
-
 
 def factorial_num(num):
     cont1 = 1
@@ -24,7 +22,6 @@ num = int(input('ingrese número para conocer su factorial:'))
 factorial_num(num)
 
 # 3. Ejercicio: Define una función que tome un número y determine si es primo.
-
 
 def num_primo(num):
     if num <= 1:
@@ -44,7 +41,6 @@ if num_primo(num2):
 else:
     print(f'El número {num2}, no es primo ')
 
-
 # 4. Ejercicio: Define una función que reciba una lista de números y retorne la sumade ellos.
 
 def suma_list(lista):
@@ -58,11 +54,9 @@ def suma_list(lista):
 
 lista = [40, 25, 15, 10, 6, 2, 2]
 suma_list(lista)
-'''
 
 # .........Variacion del ejercicio.....(arreglar)........
 # si es que la lista se pasa numero a numero por pantalla
-
 
 def suma_lista(lista):
     sum = 0
@@ -70,7 +64,6 @@ def suma_lista(lista):
         # print(cont)
         sum = sum + int(cont)
     print('La suma de los numeros introducidos es: ', sum)
-
 
 lista_num = []
 while True:
@@ -82,8 +75,6 @@ while True:
 
 suma_lista(lista_num)
 
-
-'''
 # 5. Ejercicio: Define una función que reciba una cadena de texto y retorne lacadena en reversa.
 
 cadena = input('Escriba aqui para obtener lo escrito de manera invertida: ')
@@ -100,4 +91,3 @@ while cont1 <= len(cadena):
 
 print('Lo escrito anteriormente de manera invertida se queda como: ')
 print(cadena_invertida)
-'''
