@@ -11,7 +11,6 @@ while cont <= 20:
         print(cont)
     cont += 1
 
-
 # 3. Ejercicio: Usa un bucle para calcular la suma de los números del 1 al 100.
 cont2 = 1
 sum = 0
