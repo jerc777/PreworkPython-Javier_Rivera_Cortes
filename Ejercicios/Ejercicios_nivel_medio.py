@@ -675,7 +675,32 @@ cambio_de_orden(cadena)'''
 # 33. Ejercicio: Escribe una función que reciba una lista de tuplas y retorne una lista ordenada basada en el último elemento de cada tupla.
 
 
-# 34. Ejercicio: Define una función que reciba una cadena y retorne la cantidad de letras vocales en la cadena.
+'''def lista_ordenada(tupla):
+    tupla_ordenada = sorted(tupla, key=lambda x: x[-1])
+    for elemento in tupla_ordenada:
+        print(elemento)
+
+libros = [
+    ('El señor de los anillos', 'J.R.R. Tolkien', 1954),
+    ('1984', 'George Orwell', 1949),
+    ('Harry Potter y la piedra filosofal', 'J.K. Rowling', 1997)
+]
+print('\nLos elementos son orden son: ')
+for elemento in libros:
+    print(elemento)
+print('-----------------')
+print('Los elementos ordenados según ultimo elemento de la lista :')
+lista_ordenada(libros)'''
+
+# 34. Ejercicio: Define una función que reciba una cadena y retorne la cantidad de letras vocales en la cadena
+# Ya está está
+'''def cuenta_vocales(cadena):
+  cadena_min=
+
+
+cadena_aleatoria = 'fXVvlSwobzSTzdemUGeOjEapQvKWNE'
+cuenta_vocales(cadena_aleatoria)'''
 
 
 # 35. Ejercicio: Define una función que reciba un número entero y retorne True si es un número primo, de lo contrario retorne False.
+# Ya está está
