@@ -11,6 +11,7 @@ def Suma():
             cont = 0
             for cont in numeros:
                 sum = sum + cont
+            resultado_acumulado = sum
             print("                La suma de los números introducidos es:", sum)
             print()
             break
@@ -25,6 +26,7 @@ def Resta(valor):
             break
         numero = float(valor_restante)
         valor = valor - numero
+    resultado_acumulado = valor
     return print("\n                La resta de los números introducidos es:", valor)
 
 
@@ -36,6 +38,7 @@ def Multiplicacion(valor):
             break
         numero = float(valor_restante)
         valor = valor * numero
+    resultado_acumulado = valor
     return print("\n                La multiplicación de los números introducidos es:", valor)
 
 
@@ -76,12 +79,14 @@ def Division(numerador, denominador):
 
 def Potencias(base, exponente):
     resultado = base ** exponente
+    resultado_acumulado = resultado
     return resultado
 
 
 def Raices(indice, radicando):
     inverso = 1/indice
     resultado = Potencias(radicando, inverso)
+    resultado_acumulado = resultado
     return resultado
 
 
@@ -95,6 +100,7 @@ def dec_to_bin(numero):
         numero_binario.append(valor_binario)
         numero_des = numero_des // 2
     numero_binario.reverse()
+    resultado_acumulado = numero_binario
     return numero_binario
 
 
@@ -136,6 +142,7 @@ def Calculadora():
     print()
     print("...!!!  BIENVENIDO A LA CALCULADORA BASICA  !!!...\n")
     print(" las opciones son las siguiente: ")
+    resultado_acumulado = 0
     while True:
         print(f"\n [1] Suma \n [2] Resta \n [3] Multiplicación \n [4] División \n [5] Potencias \n [6] Raices \n [7] Cambio de Decimal a binario \n [8] Salir \n")
         eleccion = int(input(" Diga su elección: "))
@@ -149,4 +156,5 @@ def Calculadora():
             print("                   [ Debe ingresar una opcion válida ] ")
 
 
-Calculadora()
+if __name__ == "__main__":
+    Calculadora()
