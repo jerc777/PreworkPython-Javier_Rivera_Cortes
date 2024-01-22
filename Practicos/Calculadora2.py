@@ -58,27 +58,29 @@ def denom_cero():
 
 
 def Division(numerador, denominador):
+    denominador2 = 0
     while True:
         if denominador == 0:
             denominador = denom_cero()
         else:
-            resultado = numerador / denominador
-            print("\n                La División entre estos números es:", resultado)
-            while True:
-                seguir = input(
-                    "\n    Quieres seguir dividiendo este numero ?.... si/No: ")
-                if seguir.lower() == "no":
-                    break
-                elif seguir.lower() == "si":
-                    denominador2 = float(
-                        input("\nIngresa el otro denominador: "))
-                    if denominador2 == 0:
-                        denominador2 = denom_cero()
-                    else:
-                        resultado2 = resultado / denominador2
-                        resultado = resultado2
-                        print(
-                            "\n                La División entre estos números es:", resultado2)
+            if denominador2 == 0:
+                resultado = numerador / denominador
+                print("\n                La División entre estos números es:", resultado)
+            seguir = input(
+                "\n    Quieres seguir dividiendo este numero ?.... si/No: ")
+            if seguir.lower() == "no":
+                break
+            elif seguir.lower() == "si":
+                denominador2 = float(
+                    input("\nIngresa el otro denominador: "))
+
+                if denominador2 == 0:
+                    denominador2 = denom_cero()
+                else:
+                    resultado2 = resultado / denominador2
+                    resultado = resultado2
+                    print(
+                        "\n                La División entre estos números es:", resultado2)
 
 
 def Potencias(base, exponente):
